@@ -112,8 +112,10 @@
                         password: passLogin
                     },
                     success: function(res) {
-                        // header("Location: index.php");
                         $('#logRes').html(res);
+                    },
+                    error: function(err) {
+                        $('#logRes').html(err);
                     }
                 })
             })
